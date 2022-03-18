@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pt = prompt("Nhập chuỗi ")
+    let c = prompt("Nhập ký tự")
+
+    function searchChar(pt) {
+        let a = pt.split(", ")
+        let dem = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] === c) {
+                dem += 1;
+            }
+        }
+        return dem;
+    }
+    alert(searchChar(pt))
+</script>
+</body>
+</html>

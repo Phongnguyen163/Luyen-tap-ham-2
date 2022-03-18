@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap ky tu" id="ns">
+<button onclick="Show()">Tinh</button>
+<script>
+    function Ktra(a) {
+        if (isNaN(a) == false) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    function Show(){
+        let b = +document.getElementById('ns').value;
+        alert(Ktra(b));
+    }
+</script>
+</body>
+</html>

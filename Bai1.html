@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap so" id="ns">
+<button onclick="Tinh()">Tinh</button>
+<script>
+    function Binhphuong(a) {
+        let b;
+        b= a*a;
+        return b;
+    }
+    function Tinh(){
+        alert(Binhphuong(+document.getElementById('ns').value));
+    }
+</script>
+</body>
+</html>

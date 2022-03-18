@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap so" id="s1">
+<input type="text" placeholder="Nhap so" id="s2">
+<button onclick="Dao()">Doicho</button>
+<script>
+    function Doicho(a,b) {
+        let t= a;
+        a=b;
+        b=t;
+        let c = a+","+b;
+        return c;
+    }
+    function Dao() {
+        let i = +document.getElementById('s1').value;
+        let n = +document.getElementById('s2').value;
+        alert(Doicho(i,n));
+    }
+</script>
+</body>
+</html>

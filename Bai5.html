@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap so" id="s1">
+<input type="text" placeholder="Nhap so" id="s2">
+<input type="text" placeholder="Nhap so" id="s3">
+<button onclick="min()">Tim min</button>
+<script>
+    function Timmin(a,b,c) {
+        let min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min ) {
+            min = c;
+        }
+        return min;
+    }
+    function min(){
+        let i = +document.getElementById('s1').value;
+        let n = +document.getElementById('s2').value;
+        let g = +document.getElementById('s3').value;
+        alert(Timmin(i,n,g));
+    }
+</script>
+</body>
+</html>

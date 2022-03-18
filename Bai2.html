@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap canh" id="nc">
+<button onclick="Tinh()">Tinh</button>
+<h2 id="cv"></h2>
+<h2 id="dt"></h2>
+<script>
+    function Chuvi(a) {
+        a = 2 * Math.PI * a;
+        return a;
+    }
+    function Dientich(a) {
+         a = Math.PI * a * a;
+        return a;
+    }
+    function Tinh() {
+        let C= Chuvi(+document.getElementById('nc').value);
+        let S= Dientich(+document.getElementById('nc').value);
+        document.getElementById("cv").innerHTML = "Chu vi: " +C;
+        document.getElementById("dt").innerHTML = "Dien tich: " +S;
+    }
+</script>
+</body>
+</html>
